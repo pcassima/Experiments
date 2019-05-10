@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+
+    head
+        include includes/head.pug
+
+    body
+        header
+            include includes/header.pug
+
+        nav
+            include includes/nav.pug
+
+
+        aside.left
+            include includes/left_aside.pug
+        //aside.right
+        //    include includes/right_aside.pug
+        main
+            article
+                h1 Style experiments
+                section
+                    h1 Header 1
+                    h2 Header 2
+                    h3 Header 3
+                    h4 Header 4
+                    h5 Header 5
+                    h6 Header 6
+                section
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque esse, est expedita explicabo fugit harum, illum iure magnam maxime minima necessitatibus neque nobis optio porro quia similique tempore ut?
+                    ul
+                        li
+                            a(href="#") Links
+                        li
+                            em Emphasis
+                        li
+                            var Variables
+                        li
+                            b Bold
+                        li
+                            i Italics
+                        li
+                            del Deleted text
+                        li
+                            s Strikeout
+                        li
+                            u Underlined text
+                        li
+                            small Small text
+                        li
+                            sub Subscript
+                        li
+                            sup Superscript
+                        li
+                            ins Inserted
+                        li
+                            dfn Defined text
+                        li
+                            mark Marked text
+                        li
+                            strong  Strong
+                        li
+                            sample Sample
+                        li
+                            kbd Keyboard
+                        li
+                            data Data
+                        li
+                            abbr Abbreviation
+                        li
+                            cite Citation
+                        li
+                            caption Caption
+                        li
+                            q Quote
+                section
+                    address
+                        | some address information
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit optio porro saepe suscipit temporibus? Dignissimos ea explicabo ipsum maxime modi nihil nostrum perspiciatis, quasi quidem reprehenderit! Beatae consequatur ex fugit.
+                    blockquote(cite="#")
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet, cum deserunt ducimus eius enim est inventore nam neque, nihil nulla obcaecati pariatur quaerat quisquam ratione sit sunt temporibus!
+                        cite Author
+                    meter(value="2" min="0" max="10")
+                        | 2 out of 10
+                    details
+                        summary Summary
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores distinctio dolorem dolores eaque, earum et excepturi explicabo iste labore laboriosam magni officia possimus quia sit tempora velit voluptate! Asperiores!
+                section
+                    .gist_container
+                        script(src="https://gist.github.com/pcassima/05c4a7dfdb3a5a22977c7201aa58ae2e.js")
+                        label(style="background-color: red;") Some script
+
+        footer
+            include includes/footer.pug
